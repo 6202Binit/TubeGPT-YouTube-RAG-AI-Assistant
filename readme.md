@@ -5,7 +5,7 @@ It extracts transcripts, performs semantic search using a vector database, and g
 
 ---
 
-## 🔥 Features
+## Features
 
 * 🎥 YouTube transcript extraction & processing
 * 🧠 Semantic search using Pinecone vector database
@@ -19,7 +19,7 @@ It extracts transcripts, performs semantic search using a vector database, and g
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 * **Backend:** Python, FastAPI
 * **AI Model:** Google Gemini (via Service Account)
@@ -34,7 +34,7 @@ It extracts transcripts, performs semantic search using a vector database, and g
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 ```text
 [ User ]
@@ -72,7 +72,7 @@ It extracts transcripts, performs semantic search using a vector database, and g
 
 ---
 
-## 🔄 How It Works
+##  How It Works
 
 1. User authenticates via **Keycloak** (JWT-based)
 2. YouTube transcripts are extracted and processed
@@ -86,7 +86,7 @@ It extracts transcripts, performs semantic search using a vector database, and g
 
 ---
 
-## 💬 Chat Flow
+##  Chat Flow
 
 * Thread-based conversation system
 * Context built using previous interactions
@@ -95,7 +95,7 @@ It extracts transcripts, performs semantic search using a vector database, and g
 
 ---
 
-## 🔐 Authentication (Keycloak)
+##  Authentication (Keycloak)
 
 * JWT-based authentication
 * Middleware handles:
@@ -107,7 +107,7 @@ It extracts transcripts, performs semantic search using a vector database, and g
 
 ---
 
-## 📌 API Endpoints
+##  API Endpoints
 
 * `POST /chat` → Main chatbot endpoint
 * `POST /ingest` → Ingest YouTube videos
