@@ -113,19 +113,8 @@ AI_USER_DETAILS_URL = "/spot/v1/finnect/v1/getaiuserDetails"
 if Ai_env=="LOCAL":
     AI_USER_DETAILS_URL = "https://api.dev.ecndev.io" + AI_USER_DETAILS_URL
 else:
-    AI_USER_DETAILS_URL = "https://api.onefinnet.com" + AI_USER_DETAILS_URL
+    AI_USER_DETAILS_URL = "https://api.dev.ecndev.io" + AI_USER_DETAILS_URL
 
-# def get_token_payload(authorization: str) -> dict:
-#     """Extract and decode JWT token from Keycloak."""
-#     if not authorization or not authorization.startswith("Bearer "):
-#         raise HTTPException(status_code=401, detail="Missing or invalid Authorization header")
-#     token = authorization.split(" ")[1]
-#     try:
-#         payload = jwt.get_unverified_claims(token)
-#         return payload
-#     except JWTError as e:
-#         print("JWT decode error:", e)
-#         raise HTTPException(status_code=401, detail="Invalid JWT token")
 
 
 
