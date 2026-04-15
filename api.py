@@ -233,7 +233,7 @@ def ingest(req: VideoIngestRequest):
     if not to_process:
         raise HTTPException(status_code=400, detail="No new valid video IDs to ingest")
 
-    rag.batch_process_videos(to_process, batch_size=10, pause_between_batches=60)
+    rag.batch_process_videos(to_process, batch_size=10, pause_between_batches=30)
 
     for vid in to_process:
         rec = db.query(Video).filter(Video.video_id == vid).first()
