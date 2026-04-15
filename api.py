@@ -1254,7 +1254,7 @@ def give_feedback(
 ):
     """Save like/dislike feedback for a turn using middleware auth."""
 
-    # 🔥 User details from middleware
+    #  User details from middleware
     user_id = request.state.user_id
 
     if not user_id:
@@ -1282,7 +1282,7 @@ def give_feedback(
             detail="Invalid feedback. Must be 'like' or 'dislike'"
         )
 
-    # 🔥 Save feedback
+    #  Save feedback
     turn.feedback = req.feedback
     db.commit()
 
